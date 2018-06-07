@@ -23,6 +23,7 @@ public class Test {
         list.add(2, list1_);
 //        list.add(2, list_);
 //        list.add(3, list_);
+
         for (List<Integer> i : list) {
 
             System.out.println(i);

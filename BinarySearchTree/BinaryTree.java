@@ -112,8 +112,9 @@ public class BinaryTree {
         if(node==null)
             return ;
 
-            node.display();
+
             inOrderTraverse(node.leftchildnode);
+            node.display();
             inOrderTraverse(node.rightchildnode);
 
     }
@@ -159,24 +160,23 @@ public class BinaryTree {
 //    public boolean delete(int value) {} //删除
 
     public static void main(String[] args) {
-//        BinaryTree bt = new BinaryTree(52);
-//        bt.insert(580);
-//        bt.insert(12);
-//        bt.insert(50);
-//        bt.insert(58);
-//        bt.insert(9);
-//        bt.insert(888);
-//        bt.insert(248);
-//        bt.insert(32);
-//        bt.insert(666);
-//        bt.insert(455);
-//        bt.insert(777);
-//        bt.insert(999);
-        BinaryTree bt = new BinaryTree(2);
-        bt.insert(1);
+        BinaryTree bt = new BinaryTree(52);
+        bt.insert(580);
+        bt.insert(12);
+        bt.insert(50);
+        bt.insert(58);
+        bt.insert(9);
+        bt.insert(888);
+        bt.insert(248);
+        bt.insert(32);
+        bt.insert(666);
+        bt.insert(455);
+        bt.insert(777);
+        bt.insert(999);
+        //BinaryTree bt = new BinaryTree(2);
         // System.out.println(bt.findKey(32));
-       // bt.findKey(bt.root,50,777);
-      // bt.inOrderTraverse();
-       bt.inOrderTraverse(bt.root,0,10);
+       //bt.findKey(bt.root,50,777);
+       bt.inOrderTraverse();
+       bt.inOrderTraverse(bt.root,0,240);
     }
 }
