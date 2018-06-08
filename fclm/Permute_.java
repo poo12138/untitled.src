@@ -25,6 +25,8 @@ public class Permute_ {
                 for(int k=0;k<=size2;k++) {
                     ArrayList<Integer> temp = new ArrayList<>(res.get(0));
                     temp.add(k,nums[i]);
+                    if(res.contains(temp))
+                        continue;;
                     res.add(temp);
                 }
                 res.remove(0);
@@ -33,7 +35,7 @@ public class Permute_ {
         return res;
     }
     public static void main(String[] args) {
-        int[] nums={1,2,2};
+        int[] nums={1,2,3};
         Permute_ pn=new Permute_();
         List<List<Integer>> list=pn.permute(nums);
         for(List<Integer> i:list){
