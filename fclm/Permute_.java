@@ -35,7 +35,7 @@ public class Permute_ {
         return res;
     }
     public static void main(String[] args) {
-        int[] nums={1,2,3};
+        int[] nums={1,2,2};
         Permute_ pn=new Permute_();
         List<List<Integer>> list=pn.permute(nums);
         for(List<Integer> i:list){
